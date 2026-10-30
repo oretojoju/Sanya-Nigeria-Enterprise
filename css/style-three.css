@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f8fafc;
+  font-family: "Roboto", sans-serif;
+  padding-top: 90px; /* Leaves room for the fixed top navbar */
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 15px 40px;
+  width: 100%;
+  background-color: #062ba7;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+header nav ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-family: "Alata", sans-serif;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+header nav ul li a:hover {
+  color: #facc15;
+}
+.cart-nav-btn {
+  background-color: #facc15;
+  color: #0f172a !important;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 700 !important;
+}
+.logo {
+  width: 140px;
+  height: auto;
+}
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 30px auto 50px auto;
+}
+.category-block {
+  margin-bottom: 60px;
+  scroll-margin-top: 95px;
+}
+.container h2 {
+  font-family: "Alata", sans-serif;
+  color: #062ba7;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #e2e8f0;
+  padding-bottom: 10px;
+}
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+.diapers {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.diapers:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+.option-img {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.diapers h3 {
+  font-family: "Alata", sans-serif;
+  color: #0f172a;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+.price {
+  color: #062ba7;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+.dropdown {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: #f8fafc;
+}
+.shop-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #062ba7 0%, #1e40af 100%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.shop-btn:hover {
+  opacity: 0.9;
+}
+.cart-box {
+  background-color: #ffffff;
+  border: 2px solid #062ba7;
+  border-radius: 16px;
+  padding: 30px;
+  margin-top: 50px;
+  scroll-margin-top: 95px;
+  box-shadow: 0 8px 20px rgba(6, 43, 167, 0.1);
+}
+#cart-items {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.cart-item-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 1.05rem;
+}
+.cart-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 15px;
+}
+.cart-actions {
+  display: flex;
+  gap: 12px;
+}
+.clear-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.whatsapp-btn {
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.whatsapp-btn:hover {
+  background-color: #15803d;
+}
+footer {
+  background-color: rgb(32, 32, 55);
+  width: 100%;
+  padding: 20px 40px;
+  color: rgb(182, 174, 174);
+  text-align: center;
+}
+.p {
+  margin-bottom: 10px;
+}
+footer nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+footer nav ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+footer nav ul li {
+  display: inline;
+}
+footer nav ul li a {
+  color: rgb(182, 174, 174);
+  text-decoration: none;
+  margin-left: 1.2rem;
+  font-weight: 500;
+}
+footer nav ul li a:hover {
+  color: #facc15;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanya Nigeria Enterprise</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Monsieur+La+Doulaise&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img class="logo" src="./images/logo white.png" alt="Logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="goods.html">Goods</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="sign-in.html" id="nav-signin">Sign In</a></li>
+        </ul>
+      </nav>
+
+      <div class="opening">
+        <h3 id="welcome-user">Welcome to</h3>
+        <h1>Sanya <br>Nigeria <br>Enterprise</h1>
+        <p>From baby steps to a sparkling home, we've got you covered</p>
+        <a href="goods.html" class="hero-btn">Start Shopping</a>
+      </div>
+    </header>
+    <main>
+      <h2>Our Categories</h2>
+      <div class="options">
+        <div class="categories">
+          <div>
+            <img class="option-img" src="./images/baby diapers.jpg" alt="Baby Diapers">
+          </div>
+          <h3>Baby Diapers</h3>
+          <a class="shop-btn" href="goods.html#diapers">View Goods</a>
+        </div>
+
+        <div class="categories">
+          <div>
+            <img class="option-img" src="./images/detergents.jpg" alt="Detergents">
+          </div>
+          <h3>Detergents</h3>
+          <a class="shop-btn" href="goods.html#detergents">View Goods</a>
+        </div>
+
+        <div class="categories">
+          <div>
+            <img class="option-img" src="./images/baby items.jpg" alt="Baby Wipes">
+          </div>
+          <h3>Baby Wipes</h3>
+          <a class="shop-btn" href="goods.html#wipes">View Goods</a>
+        </div>
+
+        <div class="categories">
+          <div>
+            <img class="option-img" src="./images/bar soaps.jpg" alt="Bar Soaps">
+          </div>
+          <h3>Bar Soaps</h3>
+          <a class="shop-btn" href="goods.html#soaps">View Goods</a>
+        </div>
+
+        <div class="categories">
+          <div>
+            <img class="option-img" src="./images/soft drinks.jpg" alt="Soft Drinks">
+          </div>
+          <h3>Soft Drinks</h3>
+          <a class="shop-btn" href="goods.html#drinks">View Goods</a>
+        </div>
+
+        <div class="categories">
+          <div>
+            <img class="option-img" src="./images/water.png" alt="Water">
+          </div>
+          <h3>Water</h3>
+          <a class="shop-btn" href="goods.html#water">View Goods</a>
+        </div>
+      </div>
+
+      <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>Have questions about wholesale or bulk orders? Reach out to us directly.</p>
+            <p><strong>Address:</strong> 7, Muri Olosunde Street, Ikotun, Lagos, Nigeria.</p>
+            <p><strong>Phone / WhatsApp:</strong> +234 906 570 2605</p>
+            <p><strong>Email:</strong> info@sanyaenterprise.com</p>
+            <p><strong>Hours:</strong> Mon – Sat: 8:00 AM – 6:00 PM</p>
+          </div>
+          <form class="contact-form" onsubmit="handleContact(event)">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="4" placeholder="How can we help you?" required></textarea>
+            <button type="submit" class="shop-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="p">© 2026 Sanya Nigeria Enterprise. All rights reserved.</p>
+      <nav>
+        <img class="logo" src="./images/logo white.png" alt="Logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="goods.html">Goods</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="sign-in.html">Sign In</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

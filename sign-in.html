@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In & Sign Up | Sanya Nigeria Enterprise</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style-two.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <nav>
+        <img class="logo" src="./images/logo white.png" alt="Logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="goods.html">Goods</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
+          <li><a href="sign-in.html" id="nav-signin">Sign In</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container my-5 flex-grow-1">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div id="signin-card" class="card shadow-lg border-0 rounded-4 p-4 p-md-5">
+            <div class="text-center mb-4">
+              <h2 class="fw-bold text-primary" style="font-family: 'Alata', sans-serif;">
+                Sign In
+              </h2>
+              <p class="text-muted">Welcome back! Sign in with your registered details.</p>
+            </div>
+            <form onsubmit="handleSignIn(event)">
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="signin-email">Email Address:</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="signin-email"
+                  placeholder="Enter your registered email"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label class="form-label fw-semibold" for="signin-pwd">Password:</label>
+                <input
+                  class="form-control"
+                  type="password"
+                  id="signin-pwd"
+                  placeholder="Enter your password"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary w-100 py-2 fw-bold fs-5 mb-3">
+                Sign In
+              </button>
+              <p class="text-center mb-0">
+                First time here?
+                <a href="#" class="fw-bold text-primary text-decoration-none" onclick="showSignUp()">
+                  Create an Account (Sign Up)
+                </a>
+              </p>
+            </form>
+          </div>
+          <div id="signup-card" class="card shadow-lg border-0 rounded-4 p-4 p-md-5" style="display: none;">
+            <div class="text-center mb-4">
+              <h2 class="fw-bold text-primary" style="font-family: 'Alata', sans-serif;">
+                Create Account (Sign Up)
+              </h2>
+              <p class="text-muted">First time customer? Register below to start ordering.</p>
+            </div>
+
+            <form onsubmit="handleSignUp(event)">
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold" for="first-name">First Name:</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="first-name"
+                    placeholder="Enter First Name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold" for="last-name">Last Name:</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="last-name"
+                    placeholder="Enter Last Name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold" for="gender">Gender:</label>
+                  <select class="form-select" id="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold" for="phone-no">Phone Number:</label>
+                  <input
+                    class="form-control"
+                    type="tel"
+                    id="phone-no"
+                    placeholder="08012345678"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="signup-email">Email Address:</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="signup-email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold" for="pwd">Password:</label>
+                  <input
+                    class="form-control"
+                    type="password"
+                    id="pwd"
+                    placeholder="Create password"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold" for="pwd-2">Confirm Password:</label>
+                  <input
+                    class="form-control"
+                    type="password"
+                    id="pwd-2"
+                    placeholder="Confirm password"
+                    required
+                  />
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100 py-2 fw-bold fs-5 mb-3">
+                Sign Up & Continue
+              </button>
+
+              <p class="text-center mb-0">
+                Already have an account?
+                <a href="#" class="fw-bold text-primary text-decoration-none" onclick="showSignIn()">
+                  Sign In here
+                </a>
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="p">© 2026 Sanya Nigeria Enterprise. All rights reserved.</p>
+      <nav>
+        <img class="logo" src="./images/logo white.png" alt="Logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="goods.html">Goods</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
+          <li><a href="sign-in.html">Sign In</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
